@@ -3,16 +3,16 @@ import java.util.List;
 
 public class Requester {
     String name;
-    String adress;
+    String address;
     Integer age;
     Schedule schedule;
     List<Feedback> feedback;
 
 
     //Constructors
-    public Requester(String name, String adress, Integer age, Schedule schedule, List<Feedback> feedback) {
+    public Requester(String name, String address, Integer age, Schedule schedule, List<Feedback> feedback) {
         this.name = name;
-        this.adress = adress;
+        this.address = address;
         this.age = age;
         this.schedule = schedule;
         this.feedback = feedback;
@@ -23,8 +23,8 @@ public class Requester {
         this.name = name;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public void setAge(Integer age) {
@@ -44,8 +44,8 @@ public class Requester {
         return name;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getaddress() {
+        return address;
     }
 
     public Integer getAge() {
@@ -68,7 +68,7 @@ public class Requester {
     }
 
     public Feedback createFeedback(String report, String abuseReport, Boolean satisfied, Boolean disabled, String jobDifficulty, Boolean wouldRecommend) {
-        Feedback feedbackGiven = new Feedback(String report, String abuseReport, Boolean satisfied, Boolean disabled, String jobDifficulty, Boolean wouldRecommend)
+        Feedback feedbackGiven = new Feedback(report, abuseReport, satisfied, disabled, jobDifficulty, wouldRecommend);
         return feedbackGiven;
     }
 
@@ -81,14 +81,15 @@ public class Requester {
     }
     public void logOut() {
 
-}
+    }
 
     public void sendRequest() {
 
     }
 
     public Logger getLoggers() {
-
+        Logger l = new Logger();
+        return l;
     }
 
 
