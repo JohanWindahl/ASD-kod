@@ -1,4 +1,3 @@
-
 public class Feedback {
     String Report;
     String abuseReport;

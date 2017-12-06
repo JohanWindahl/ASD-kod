@@ -13,32 +13,32 @@ public class Reception {
         this.requestTracking = requestTracking;
     }
 
-    public void receiveRequest(Request){
+    public void receiveRequest(Request request){
 
     }
 
-    public void addRequest(Request){
+    public void addRequest(Request request){
 
     }
 
-    public void deleteRequest(Request){
+    public void deleteRequest(Request request){
 
     }
 
-    public void addTelephoneNumber(Request){
+    public void addTelephoneNumber(Request request){
 
     }
 
-    public void addFeedback(Feedback){
+    public void addFeedback(Feedback feeedback){
 
     }
 
 
-    public void changeResSchedule(Responder){
+    public void changeResSchedule(Responder responder){
 
     }
 
-    public void getLogger(Logger){
+    public void getLogger(Logger logger){
 
     }
 }
