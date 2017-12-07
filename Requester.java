@@ -6,7 +6,7 @@ public class Requester {
     String address;
     Integer age;
     Schedule schedule;
-    List<Feedback> feedback;
+    List<Feedback> feedbacks;
 
 
     //Constructors
@@ -15,7 +15,7 @@ public class Requester {
         this.address = address;
         this.age = age;
         this.schedule = schedule;
-        this.feedback = feedback;
+        this.feedbacks = feedback;
     }
 
     //Setters
@@ -35,8 +35,8 @@ public class Requester {
         this.schedule = schedule;
     }
 
-    public void setFeedback(List<Feedback> feedback) {
-        this.feedback = feedback;
+    public void setFeedbacks(List<Feedback> feedbacks) {
+        this.feedbacks = feedbacks;
     }
 
     //Getters
@@ -56,8 +56,8 @@ public class Requester {
         return schedule;
     }
 
-    public List<Feedback> getFeedback() {
-        return feedback;
+    public List<Feedback> getFeedbacks() {
+        return feedbacks;
     }
 
     //More Methods
